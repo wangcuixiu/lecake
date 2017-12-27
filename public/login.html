@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>登录页面</title>
+    <link rel="stylesheet" type="text/css" href="css/login.css"/>
+</head>
+<body>
+    <div class="top">
+        <div>
+           <h1>
+                <a href="index.html"></a>
+                <img src="images/hat.png"/>
+            </h1> 
+        </div>
+        <div class="top-bg"></div>
+    </div>
+
+    <div class="content">
+        <div class="content-main">
+            <div class="loginBox">
+                <form  method="post" action="loginCheck">
+                    <div class="form-top" id="form-top">
+                        <span style="color:red;">账户密码登录</span> 
+                        &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span>手机验证登录</span>
+                    </div>
+                    <div class="form-main1" id="form-main1">
+                        <div class="userId">
+                            <input type="text" name="username" placeholder="请输入账号" /><br/>
+                            <span></span>
+                        </div>
+                        <div class="userpass">
+                            <input type="password" name="userpass" placeholder="请输入密码" /><br/>
+                            <span></span>
+                        </div>
+                        <input type="submit"  value="立即登录" />
+                        <div class="forget">
+                            <a href="javascript:;" style="color:#908a86;">
+                                忘记密码
+                            </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span style="color:#49413a;margin-left: 5px;">还没有账号？</span>
+                            <a href="reg.html" style="color:red;">立即注册</a>
+                        </div>
+                        <hr/>
+                        <span>其他登录方式</span>
+                        <a href="javascript:;">
+                            <img src="images/w.jpg"/>
+                        </a>
+                    </div>
+
+                    <div class="form-main2" id="form-main2">
+                        <div class="userId">
+                            <input type="text" name="" placeholder="手机号码" /><br/>
+                            <span></span>
+                        </div>
+                        <div class="code">
+                            <input type="text" name="" placeholder="请输入验证码" /><br/>
+                            <b id="yanzhenma"></b>
+                            <span></span>
+                        </div>
+                        <div class="phoneNumber">
+                            <input type="text" name="" placeholder="短信验证码" /><br/>
+                            <b>发送验证码</b>
+                            <span></span>
+                        </div>
+                        <input type="submit" name="" value="立即登录" />
+                        <div class="forget">
+                            <a href="javascript:;" style="color:#908a86;">
+                                忘记密码
+                            </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span style="color:#49413a;margin-left: 5px;">还没有账号？</span>
+                            <a href="reg.html" style="color:red;">立即注册</a>
+                        </div>
+                        <hr/>
+                        <span>其他登录方式</span>
+                        <a href="javascript:;">
+                            <img src="images/w.jpg"/>
+                        </a>
+                    </div>
+
+                   
+                </form>
+            </div>
+        </div>
+
+        <!--------footer-------------------->
+        <footer>
+            <img src="images/ji.jpg"/>
+        </footer>
+    </div>
+
+</body>
+</html>
+<script type="text/javascript" src="javascripts/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="javascripts/login.js"></script>

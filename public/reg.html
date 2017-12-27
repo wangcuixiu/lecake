@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>注册页面</title>
+    <link rel="stylesheet" type="text/css" href="css/reg.css"/>
+</head>
+<body>
+    <div class="top">
+        <div>
+           <h1>
+                <a href="index.html"></a>
+                <img src="images/hat.png"/>
+            </h1> 
+            <span>用户注册</span>
+            <div>
+                <span>已有诺心账号？</span>
+                <a href="login.html">请登录</a>
+            </div>
+        </div>
+        <div class="top-bg"></div>
+    </div>
+    <form method="post" action="regSave">
+        <div>
+             <input name="username" type="text" placeholder="手机号码" /><br/>
+             <span>*请输入手机号</span>
+        </div>
+        <div>
+            <input name="userpass" type="password" placeholder="6-20位密码" /><br/>
+            <span>请输入密码</span>
+        </div>
+        <div>
+            <input name="" type="password" placeholder="确认密码" /><br/>
+            <span>*两次输入密码不一致</span>
+        </div>
+        <div id="drog">
+            请按住滑块，拖拽到最右边
+            <div id=drogBox>>></div>
+        </div>
+        <div>
+            <input name="" type="password" placeholder="手机验证码" />
+            <b>发送验证码</b><br/>
+            <span>*请输入手机验证码</span>
+        </div>
+        <div>
+             <input type="submit" value="立即注册" />
+        </div>
+       <div>
+            <input name="" type="checkBox" checked="checked" />
+            我已阅读并同意<a href="javascript:;">《诺心lecake用户服务协议》</a>
+        </div>
+    </form>
+</body>
+</html>

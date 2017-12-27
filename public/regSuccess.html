@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    亲，注册成功!<span id="spanSeconds">5</span>秒后，自动跳转到<a href="login.html">登录</a>页面。
+</body>
+</html>
+<script type="text/javascript">
+    window.onload = function(){
+        let seconds = 5;
+        let myTimer = setInterval(function(){
+                    seconds--;
+                    if(seconds<=0){
+                        window.clearInterval(myTimer);
+                        location.href="login.html";
+                        return;
+                    }
+                    document.getElementById("spanSeconds").innerHTML = seconds;
+                },1000);
+    }
+</script>
