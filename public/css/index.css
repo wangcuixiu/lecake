@@ -1,0 +1,243 @@
+body {
+  background: url(../images/bg_3_1.jpg);
+  height: 100%;
+}
+
+/********************content*******************************/
+.content {
+  min-height: 40%;
+  width: 95%;
+  background: url(../images/home_bg.jpg);
+  background-size: 100%;
+  position: absolute;
+  top: 240px;
+  left: 50%;
+  margin-left: -47.5%;
+  z-index: 1000;
+}
+.content #banner {
+  width: 94%;
+  margin: 40px auto 20px;
+  position: relative;
+  height: 160px;
+  overflow: hidden;
+}
+.content #banner #img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.content #banner #img > img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  display: none;
+  opacity: 0;
+}
+.content #banner #img .active {
+  display: block;
+  opacity: 1;
+}
+.content .btn {
+  width: 148px;
+  height: 20px;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  margin-left: -74px;
+  cursor: pointer;
+  z-index: 55;
+  border-radius: 10px;
+}
+.content .btn > li {
+  float: left;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #fff;
+  margin: 4px 5px;
+}
+.content .btn .black {
+  background: red;
+}
+.content .content-1 {
+  width: 94%;
+  min-height: 300px;
+  margin: 10px auto 20px;
+}
+.content .content-1 > img {
+  width: 100%;
+}
+.content .content-1 > p {
+  line-height: 50px;
+  font-size: 12px;
+  text-align: center;
+}
+.content .content-bottom {
+  min-height: 300px;
+  padding: 0 20px;
+  text-align: center;
+  overflow: hidden;
+}
+.content .content-bottom > h3 {
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+.content .content-bottom > h3 > p {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.content .content-bottom > h3 > hr {
+  border: 0;
+  width: 40px;
+  height: 1px;
+  background: #ff501b;
+  margin: 0 auto;
+}
+.content .content-bottom > h3 > span {
+  font-size: 12px;
+}
+.content .content-bottom .goodList {
+  width: 100%;
+  margin: 0 auto;
+}
+.content .content-bottom .goodList > li {
+  float: left;
+  min-height: 200px;
+  margin-right: 10px;
+  margin-bottom: 30px;
+  overflow: hidden;
+  width: 90%;
+}
+.content .content-bottom .goodList > li > a {
+  display: block;
+  width: 100%;
+  color: #3e3e3e;
+  font-size: 12px;
+}
+.content .content-bottom .goodList > li > a > img {
+  width: 100%;
+}
+.content .content-bottom .goodList > li > div {
+  overflow: hidden;
+  position: relative;
+  height: 80px;
+}
+.content .content-bottom .goodList > li > div > a {
+  display: block;
+  width: 100%;
+  color: #3e3e3e;
+  font-size: 12px;
+  transition: all 1s;
+  position: absolute;
+  left: 0;
+  top: 0px;
+}
+.content .content-bottom .goodList > li > div > a > h6 {
+  font-weight: 100;
+  overflow: hidden;
+  width: 100%;
+  margin: 10px auto 0;
+}
+.content .content-bottom .goodList > li > div > a > h6 > span {
+  float: left;
+}
+.content .content-bottom .goodList > li > div > a > h6 > span:nth-child(1) {
+  margin-left: 35%;
+  margin-right: 4px;
+  padding: 0 5px;
+  line-height: 18px;
+  color: #fff;
+  background: #ff4001;
+  border-radius: 5px;
+}
+.content .content-bottom .goodList > li > div > div {
+  transition: all 1s;
+  width: 100%;
+  color: #3e3e3e;
+  font-size: 12px;
+  position: absolute;
+  left: 0;
+  bottom: -90px;
+  font-weight: 100;
+}
+.content .content-bottom .goodList > li > div > div > a {
+  display: block;
+  width: 22%;
+  padding: 2px 5px;
+  line-height: 18px;
+  color: #fff;
+  background: #ff4001;
+  border-radius: 5px;
+  margin: 2px auto;
+}
+.content .content-bottom .goodList > li:hover > div > a {
+  top: -200px;
+}
+.content .content-bottom .goodList > li:hover > div > div {
+  bottom: 0px;
+}
+.content > .content-footer {
+  width: 100%;
+  font-size: 12px;
+}
+.content > .content-footer > a {
+  display: block;
+  line-height: 20px;
+  width: 100%;
+  text-align: center;
+  color: #3e3e3e;
+}
+.content footer {
+  width: 100%;
+  height: 160px;
+  background: #ebebeb;
+  overflow: hidden;
+  margin-top: 20px;
+}
+.content footer > img {
+  width: 100%;
+  margin: 20px auto;
+}
+
+@media screen and (min-width: 768px) {
+  .content > #banner {
+    height: 383px;
+  }
+
+  .content .content-bottom .goodList > li {
+    width: 30%;
+    height: 270px;
+  }
+  .content footer {
+    width: 100%;
+    height: 360px;
+    background: #ebebeb;
+    overflow: hidden;
+    margin-top: 20px;
+  }
+  .content footer > img {
+    width: 80%;
+    margin: 20px auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .content .content-bottom .goodList > li {
+    width: 24%;
+    height: 270px;
+  }
+  .content .content-bottom .goodList > li > a > h6 > span:nth-child(1) {
+    margin-left: 22%;
+  }
+  .content .content-bottom .goodList > li:hover > div > div {
+    bottom: 27px;
+  }
+  .content .content-bottom .goodList > li > div {
+    height: 100px;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

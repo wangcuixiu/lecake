@@ -1,0 +1,184 @@
+body {
+  background: #fff;
+}
+
+/***********content*****************/
+.content {
+  position: absolute;
+  top: 150px;
+  width: 100%;
+}
+.content .nav-xlink {
+  height: 105px;
+  width: 100%;
+  background: rgba(249, 249, 249, 0.5);
+  display: flex;
+  flex-direction: column;
+}
+.content .nav-xlink > ul {
+  margin-top: 2px;
+}
+.content .nav-xlink > ul > li {
+  float: left;
+  font-size: 12px;
+  padding: 0 2px;
+}
+.content .nav-xlink > ul > li:hover > a {
+  color: #fd4f00;
+}
+.content .nav-xlink > ul > li > a {
+  color: #333;
+}
+.content .content-main {
+  width: 96%;
+  margin: 30px auto 0;
+  min-height: 100px;
+  overflow: hidden;
+}
+.content .content-main .goodList {
+  width: 100%;
+  margin: 0 auto;
+}
+.content .content-main .goodList > .liDom {
+  margin-right: 10px;
+}
+.content .content-main .goodList > li {
+  float: left;
+  min-height: 200px;
+  margin-right: 10px;
+  margin-bottom: 30px;
+  overflow: hidden;
+  width: 90%;
+}
+.content .content-main .goodList > li > a {
+  display: block;
+  width: 100%;
+  color: #3e3e3e;
+  font-size: 12px;
+}
+.content .content-main .goodList > li > a > img {
+  width: 100%;
+}
+.content .content-main .goodList > li > div {
+  overflow: hidden;
+  position: relative;
+  height: 80px;
+  text-align: center;
+}
+.content .content-main .goodList > li > div > a {
+  display: block;
+  width: 100%;
+  color: #3e3e3e;
+  font-size: 12px;
+  transition: all 1s;
+  position: absolute;
+  left: 0;
+  top: 0px;
+}
+.content .content-main .goodList > li > div > a > h6 {
+  font-weight: 100;
+  overflow: hidden;
+  width: 100%;
+  margin: 10px auto 0;
+}
+.content .content-main .goodList > li > div > a > h6 > span {
+  float: left;
+}
+.content .content-main .goodList > li > div > a > h6 > span:nth-child(1) {
+  margin-left: 20%;
+  margin-right: 4px;
+  padding: 0 5px;
+  line-height: 18px;
+  color: #fff;
+  background: #ff4001;
+  border-radius: 5px;
+}
+.content .content-main .goodList > li > div > div {
+  transition: all 1s;
+  width: 100%;
+  color: #3e3e3e;
+  font-size: 12px;
+  position: absolute;
+  left: 0;
+  bottom: -90px;
+  font-weight: 100;
+}
+.content .content-main .goodList > li > div > div > a {
+  display: block;
+  width: 22%;
+  padding: 2px 5px;
+  line-height: 18px;
+  color: #fff;
+  background: #ff4001;
+  border-radius: 5px;
+  margin: 2px auto;
+}
+.content .content-main .goodList > li:hover > div > a {
+  top: -200px;
+}
+.content .content-main .goodList > li:hover > div > div {
+  bottom: 0px;
+}
+.content footer {
+  width: 100%;
+  height: 220px;
+  background: #ebebeb;
+  overflow: hidden;
+  margin-top: 20px;
+}
+.content footer > img {
+  width: 100%;
+  margin: 20px auto;
+}
+
+@media screen and (min-width: 768px) {
+  .content .nav-xlink > ul {
+    margin-top: 13px;
+  }
+  .content .nav-xlink > ul > li {
+    float: left;
+    font-size: 12px;
+    padding: 0 20px;
+  }
+  .content .nav-xlink > ul > li:hover > a {
+    color: #fd4f00;
+  }
+  .content .nav-xlink > ul > li > a {
+    color: #333;
+  }
+  .content .content-main .goodList > li {
+    width: 30%;
+    height: 270px;
+  }
+  .content footer {
+    width: 100%;
+    height: 300px;
+    background: #ebebeb;
+    overflow: hidden;
+    margin-top: 20px;
+  }
+  .content footer > img {
+    width: 60%;
+    margin: 20px auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .content .content-main .goodList > .liDom {
+    margin-right: 0px;
+  }
+  .content .content-main .goodList > li {
+    width: 24%;
+    height: 270px;
+  }
+  .content .content-main .goodList > li > a > h6 > span:nth-child(1) {
+    margin-left: 15%;
+  }
+  .content .content-main .goodList > li:hover > div > div {
+    bottom: 39px;
+  }
+  .content .content-main .goodList > li > div {
+    height: 100px;
+  }
+}
+
+/*# sourceMappingURL=list.css.map */

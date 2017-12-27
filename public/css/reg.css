@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/************top*******************/
+.top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99999;
+}
+.top > div:nth-child(1) {
+  width: 100%;
+  height: 90px;
+  background: #fff;
+  overflow: hidden;
+}
+.top > div:nth-child(1) > h1 {
+  height: 90px;
+  width: 16%;
+  padding-left: 20px;
+  position: relative;
+}
+.top > div:nth-child(1) > h1 > a {
+  display: block;
+  width: 100%;
+  background: red;
+  height: 90px;
+  background: url(../images/logo.png) no-repeat center;
+  background-size: 100%;
+}
+.top > div:nth-child(1) > h1 > img {
+  position: absolute;
+  left: 24px;
+  top: 19px;
+  width: 20%;
+  height: 25%;
+}
+.top > div:nth-child(1) > span {
+  position: absolute;
+  left: 22%;
+  font-size: 16px;
+  top: 35px;
+}
+.top > div:nth-child(1) > div {
+  position: absolute;
+  right: -90px;
+  top: 40px;
+  width: 20%;
+  height: 100%;
+  font-size: 12px;
+}
+.top > div:nth-child(1) > div > a {
+  color: red;
+}
+.top > .top-bg {
+  height: 48px;
+  background: url(../images/topBg.png) no-repeat top center;
+}
+
+form {
+  width: 20%;
+  height: 396px;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 100px;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+form > div {
+  height: 56px;
+}
+form > div > input {
+  width: 100%;
+  height: 30px;
+  border: 0;
+  border-bottom: 1px solid #e5e5e5;
+  padding-left: 19px;
+  outline: none;
+}
+form > div:nth-child(1) > input {
+  background: url(../images/s.jpg) no-repeat left center;
+}
+form > div:nth-child(2) > input {
+  background: url(../images/m.jpg) no-repeat left center;
+}
+form > div:nth-child(5) > b {
+  float: right;
+  width: 90px;
+  line-height: 30px;
+  font-weight: 100;
+  text-align: center;
+  color: #fff;
+  background: #ff4001;
+  font-size: 12px;
+}
+form > div:nth-child(5) > input {
+  width: 50%;
+  background: url(../images/y.jpg) no-repeat left center;
+}
+form > div:nth-child(6) {
+  margin-top: 10px;
+}
+form > div:nth-child(6) > input {
+  text-align: center;
+  height: 50px;
+  font-size: 16px;
+  line-height: 50px;
+  width: 100%;
+  color: #fff;
+  background: #ff4001;
+}
+form > div:nth-child(7) {
+  margin-top: 10px;
+  font-size: 12px;
+}
+form > div:nth-child(7) > a {
+  color: red;
+}
+form > div:nth-child(7) > input {
+  text-align: center;
+  height: 11px;
+  font-size: 16px;
+  line-height: 50px;
+  width: 11px;
+  color: #fff;
+  background: #ff4001;
+}
+form > div > span {
+  display: none;
+  font-size: 12px;
+  margin-left: 10px;
+  color: red;
+}
+form > #drog {
+  height: 34px;
+  width: 100%;
+  background: #e8e8e8;
+  margin: 10px 0 15px;
+  text-align: center;
+  line-height: 34px;
+  font-size: 12px;
+  color: #333;
+  position: relative;
+}
+form > #drog > div {
+  width: 40px;
+  height: 32px;
+  line-height: 32px;
+  border: 1px solid #ccc;
+  position: absolute;
+  background: #fff;
+  left: 0;
+  top: 0;
+  user-select: none;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=reg.css.map */
